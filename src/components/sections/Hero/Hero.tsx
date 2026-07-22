@@ -10,10 +10,8 @@ export default function Hero() {
           <span className={styles.eyebrow}>Full Stack Developer</span>
 
           <h1 className={styles.title}>
-            Full Stack Developer <br />
-            <span>
-              Building modern web applications with React, Next.js and Node.js.
-            </span>
+            Full Stack Developer
+            <span>Andrii Mitko</span>
           </h1>
 
           <p className={styles.description}>

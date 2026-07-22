@@ -8,6 +8,7 @@ import Container from "../Container/Container";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import { useMobileMenu } from "./useMobileMenu";
 import { navigation } from "@/data/navigation";
+import { AnimatePresence } from "framer-motion";
 
 export default function Header() {
   const { isOpen, toggle, close } = useMobileMenu();
@@ -58,7 +59,9 @@ export default function Header() {
           </button>
         </div>
       </Container>
-      {isOpen && <MobileMenu onClose={close} />}
+      <AnimatePresence>
+        {isOpen && <MobileMenu onClose={close} />}
+      </AnimatePresence>
     </header>
   );
 }

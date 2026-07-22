@@ -4,11 +4,17 @@ export function useMobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const open = () => setIsOpen(true);
+
   const close = () => setIsOpen(false);
-  const toggle = () => setIsOpen((prev) => !prev);
+
+  const toggle = () => {
+    setIsOpen((prev) => !prev);
+  };
 
   useEffect(() => {
     if (!isOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
 
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -22,7 +28,8 @@ export function useMobileMenu() {
 
     return () => {
       document.removeEventListener("keydown", handleEscape);
-      document.body.style.overflow = "";
+
+      document.body.style.overflow = previousOverflow;
     };
   }, [isOpen]);
 
