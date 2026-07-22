@@ -1,0 +1,64 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(11, 17, 32, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 20px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.logoAccent {
+  display: grid;
+  place-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background: var(--color-primary);
+
+  color: white;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+
+  list-style: none;
+}
+
+.nav a {
+  color: white;
+
+  text-decoration: none;
+
+  transition: color 250ms ease;
+}
+
+.nav a:hover {
+  color: #3b82f6;
+}
