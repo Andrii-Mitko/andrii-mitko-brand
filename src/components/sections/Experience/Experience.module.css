@@ -1,0 +1,24 @@
+.section {
+  padding-block: 80px;
+}
+
+.title {
+  margin-bottom: 48px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 32px;
+}
+
+.period {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  color: var(--color-primary);
+
+  font-weight: 700;
+}

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-
+import Card from "@/components/ui/Card/Card";
 import type { Project } from "@/types/project";
 
 import styles from "./ProjectCard.module.css";
@@ -13,7 +13,7 @@ type Props = {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <article className={styles.card}>
+    <Card>
       <div className={styles.imageWrapper}>
         <Image
           src={project.image}
@@ -22,6 +22,7 @@ export default function ProjectCard({ project }: Props) {
           sizes="(max-width: 768px) 100vw, 33vw"
           className={styles.image}
         />
+        {project.featured && <span className={styles.featured}>Featured</span>}
       </div>
 
       <div className={styles.content}>
@@ -30,8 +31,13 @@ export default function ProjectCard({ project }: Props) {
         <p className={styles.description}>{project.description}</p>
 
         <ul className={styles.tags}>
-          {project.technologies.map((technology) => (
-            <li key={technology}>{technology}</li>
+          {project.technologies.map((tech) => (
+            <span
+              key={tech}
+              className={`${styles.tag} ${styles[tech.replace(/\W/g, "")]}`}
+            >
+              {tech}
+            </span>
           ))}
         </ul>
 
@@ -51,6 +57,6 @@ export default function ProjectCard({ project }: Props) {
           )}
         </div>
       </div>
-    </article>
+    </Card>
   );
 }

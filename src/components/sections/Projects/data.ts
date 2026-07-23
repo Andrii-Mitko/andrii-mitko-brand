@@ -34,7 +34,7 @@ export const projects: Project[] = [
     title: "STP-13021",
     description:
       "Responsive web application built with modern frontend technologies.",
-    image: "/projects/stp-13021webp",
+    image: "/projects/stp-13021.webp",
     technologies: ["HTML", "CSS", "JavaScript"],
     live: "https://anastacia-tkachova.github.io/STP-13021/",
     github: "https://github.com/Andrii-Mitko/STP-13021",

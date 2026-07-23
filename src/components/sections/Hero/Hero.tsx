@@ -2,6 +2,7 @@ import Container from "../../layout/Container/Container";
 import styles from "./Hero.module.css";
 import Button from "../../ui/Button/Button";
 import HeroImage from "./HeroImage/HeroImage";
+import TechStack from "../TechStack/TechStack";
 
 export default function Hero() {
   return (
@@ -27,6 +28,7 @@ export default function Hero() {
                 Contact Me
               </Button>
             </div>
+             <TechStack />
           </div>
           <HeroImage />
         </div>
