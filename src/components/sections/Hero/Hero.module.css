@@ -8,6 +8,17 @@
   align-items: flex-start;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
 .eyebrow {
   display: inline-block;
   margin-bottom: 16px;
@@ -28,8 +39,13 @@
   line-height: 1.1;
 }
 
-.title span {
+.subtitle {
+  margin-bottom: 16px;
+
   color: var(--color-primary);
+
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .description {
@@ -82,4 +98,18 @@
 
 .actions a:last-child:hover {
   transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr 320px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    grid-template-columns: 1fr 420px;
+    gap: 80px;
+  }
 }

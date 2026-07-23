@@ -1,76 +1,106 @@
 import type { Technology } from "@/types/technology";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaDocker,
+  FaGithub,
+} from "react-icons/fa";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiNextdotjs,
+  SiExpress,
+  SiMongodb,
+  SiFigma,
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 export const technologies: Technology[] = [
   {
-    id: "html",
+    id: "html5",
     name: "HTML5",
-    icon: "/icons/technologies/html5.svg",
+    icon: FaHtml5,
     category: "frontend",
   },
   {
-    id: "css",
+    id: "css3",
     name: "CSS3",
-    icon: "/icons/technologies/css3.svg",
+    icon: FaCss3Alt,
     category: "frontend",
   },
   {
     id: "javascript",
     name: "JavaScript",
-    icon: "/icons/technologies/javascript.svg",
+    icon: SiJavascript,
     category: "frontend",
   },
   {
     id: "typescript",
     name: "TypeScript",
-    icon: "/icons/technologies/typescript.svg",
+    icon: SiTypescript,
     category: "frontend",
   },
   {
     id: "react",
     name: "React",
-    icon: "/icons/technologies/react.svg",
+    icon: FaReact,
     category: "frontend",
   },
   {
     id: "nextjs",
     name: "Next.js",
-    icon: "/icons/technologies/nextjs.svg",
+    icon: SiNextdotjs,
     category: "frontend",
   },
   {
     id: "nodejs",
     name: "Node.js",
-    icon: "/icons/technologies/nodejs.svg",
+    icon: FaNodeJs,
     category: "backend",
   },
   {
     id: "express",
     name: "Express",
-    icon: "/icons/technologies/express.svg",
+    icon: SiExpress,
     category: "backend",
   },
   {
     id: "mongodb",
     name: "MongoDB",
-    icon: "/icons/technologies/mongodb.svg",
+    icon: SiMongodb,
     category: "database",
   },
   {
     id: "git",
     name: "Git",
-    icon: "/icons/technologies/git.svg",
+    icon: FaGitAlt,
     category: "tools",
   },
   {
     id: "github",
     name: "GitHub",
-    icon: "/icons/technologies/github.svg",
+    icon: FaGithub,
     category: "tools",
   },
   {
     id: "docker",
     name: "Docker",
-    icon: "/icons/technologies/docker.svg",
+    icon: FaDocker,
+    category: "tools",
+  },
+  {
+    id: "vscode",
+    name: "VS Code",
+    icon: VscVscode,
+    category: "tools",
+  },
+  {
+    id: "figma",
+    name: "Figma",
+    icon: SiFigma,
     category: "tools",
   },
 ];

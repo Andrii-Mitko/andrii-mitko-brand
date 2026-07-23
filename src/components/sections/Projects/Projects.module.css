@@ -1,0 +1,61 @@
+.section {
+  padding-block: 80px;
+}
+
+.header {
+  max-width: 650px;
+
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+
+  color: var(--color-primary);
+
+  font-size: 0.875rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0 0 16px;
+
+  color: var(--color-text);
+
+  font-size: 2rem;
+
+  font-weight: 800;
+}
+
+.description {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,6 +1,10 @@
+import { IconType } from "react-icons";
+
+export type TechnologyCategory = "frontend" | "backend" | "database" | "tools";
+
 export type Technology = {
   id: string;
   name: string;
-  icon: string;
-  category: "frontend" | "backend" | "database" | "tools";
+  icon: IconType;
+  category: TechnologyCategory;
 };
