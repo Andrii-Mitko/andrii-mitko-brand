@@ -8,7 +8,7 @@ export const education = [
   },
   {
     period: "1991 – 1995",
-    school: "Pryazovskyi State Technical University",
+    school: "Mariupol Mechanical and Metallurgical College (PSTU)",
     degree: "Electrical Engineering",
     description:
       "Studied electrical engineering, automation systems and technical problem solving.",

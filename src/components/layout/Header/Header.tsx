@@ -44,8 +44,13 @@ export default function Header() {
               GitHub
             </Link>
 
-            <Link href="/resume.pdf" className={styles.resume}>
-              Resume
+            <Link
+              className={styles.resume}
+              href="/resume/Andrii-Mitko-CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
             </Link>
           </div>
           <button
