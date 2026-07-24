@@ -16,11 +16,11 @@ export default function Experience() {
             <Card key={item.title}>
               <span className={styles.period}>{item.period}</span>
 
-              <h3>{item.title}</h3>
+              <h3 className={styles.cardTitle}>{item.title}</h3>
 
-              <h4>{item.company}</h4>
+              <h4 className={styles.degree}>{item.company}</h4>
 
-              <p>{item.description}</p>
+              <p className={styles.description}>{item.description}</p>
             </Card>
           ))}
         </div>

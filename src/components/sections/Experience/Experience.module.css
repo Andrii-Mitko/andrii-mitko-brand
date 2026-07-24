@@ -22,3 +22,23 @@
 
   font-weight: 700;
 }
+
+.cardTitle {
+  margin: 0 0 8px;
+}
+
+.degree {
+  margin: 0 0 16px;
+
+  color: var(--color-text-secondary);
+
+  font-weight: 500;
+}
+
+.description {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+
+  line-height: 1.7;
+}

@@ -8,5 +8,9 @@ type Props = {
 };
 
 export default function Card({ children, className = "" }: Props) {
-  return <div className={`${styles.card} ${className}`}>{children}</div>;
+  return (
+    <article className={`${styles.card} ${className}`}>
+      <div className={styles.body}>{children}</div>
+    </article>
+  );
 }
