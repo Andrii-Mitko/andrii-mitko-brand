@@ -52,7 +52,7 @@ export default function MobileMenu({ onClose }: Props) {
           </li>
 
           <li>
-            <Link href="/resume.pdf" onClick={onClose}>
+            <Link href="/resume/Andrii-Mitko-CV.pdf" onClick={onClose}>
               Resume
             </Link>
           </li>
