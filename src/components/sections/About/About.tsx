@@ -29,25 +29,29 @@ export default function About() {
             </ul>
           </div>
 
-          <div className={styles.stats}>
+          <div className={styles.highlights}>
             <div className={styles.card}>
-              <span>4+</span>
-              <p>Projects</p>
+              <h3>Full Stack Development</h3>
+              <p>
+                Building modern web applications with React, Next.js, Node.js
+                and MongoDB.
+              </p>
             </div>
 
             <div className={styles.card}>
-              <span>15+</span>
-              <p>Technologies</p>
+              <h3>Backend Development</h3>
+              <p>
+                Creating REST APIs, authentication systems and database
+                solutions.
+              </p>
             </div>
 
             <div className={styles.card}>
-              <span>30+</span>
-              <p>Repositories</p>
-            </div>
-
-            <div className={styles.card}>
-              <span>1+</span>
-              <p>Years Learning</p>
+              <h3>Clean UI & UX</h3>
+              <p>
+                Developing responsive interfaces with attention to performance
+                and usability.
+              </p>
             </div>
           </div>
         </div>

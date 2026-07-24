@@ -18,10 +18,6 @@ export default function Projects() {
             title="Featured Projects"
             description="A selection of applications I have built using modern web technologies."
           />
-
-          <p className={styles.description}>
-            A selection of projects I have built using modern web technologies.
-          </p>
         </header>
 
         <div className={styles.grid}>

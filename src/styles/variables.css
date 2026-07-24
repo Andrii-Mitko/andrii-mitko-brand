@@ -25,11 +25,23 @@
   --radius-xl: 24px;
 
   /* Shadow */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.12);
   --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.3);
 
   /* Container */
   --container-width: 1200px;
+  --container-padding: 20px;
 
   /* Transition */
   --transition: 250ms ease;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-section: 80px;
 }
