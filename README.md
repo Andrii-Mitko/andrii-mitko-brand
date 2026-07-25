@@ -2,7 +2,7 @@
 
 Особистий бренд та дизайн-система.
 
-## Structure
+### Structure
 
 - Brand Book
 - Design System
