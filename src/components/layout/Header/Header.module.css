@@ -1,18 +1,33 @@
 .header {
   position: sticky;
+
   top: 0;
+
   z-index: 1000;
+
+  height: 72px;
+
   background-color: rgba(11, 17, 32, 0.85);
+
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .inner {
   display: flex;
+
   align-items: center;
   justify-content: space-between;
-  min-height: 72px;
+
+  height: 72px;
+}
+
+.scrolled {
+  background-color: rgba(11, 17, 32, 0.95);
+
+  box-shadow: var(--shadow-md);
 }
 
 .logo {

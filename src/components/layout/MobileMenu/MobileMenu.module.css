@@ -18,7 +18,7 @@
 .menu {
   width: min(320px, 85vw);
   height: calc(100vh - 72px);
-
+  box-sizing: border-box;
   padding: 32px 20px;
 
   background-color: var(--color-bg);
@@ -46,4 +46,10 @@
 
 .list a:hover {
   color: var(--color-primary);
+}
+
+.list a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 6px;
+  border-radius: 6px;
 }

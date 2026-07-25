@@ -80,6 +80,16 @@ export const metadata: Metadata = {
 
     images: ["/og-image.png"],
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://andrii-mitko.vercel.app",
+  },
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
