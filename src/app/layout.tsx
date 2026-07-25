@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://andrii-mitko.vercel.app"),
+  metadataBase: new URL("https://andrii-mitko-brand.vercel.app/"),
 
   title: {
     default: "Andrii Mitko | Full Stack JavaScript Developer",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
 
-    url: "https://andrii-mitko.vercel.app",
+    url: "https://andrii-mitko-brand.vercel.app/",
 
     title: "Andrii Mitko | Full Stack JavaScript Developer",
 
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/og-image.png",
+        url: "https://andrii-mitko-brand.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Andrii Mitko Portfolio",
@@ -78,14 +78,14 @@ export const metadata: Metadata = {
     description:
       "Full Stack JavaScript Developer specializing in React, Next.js, TypeScript, Node.js and MongoDB.",
 
-    images: ["/og-image.png"],
+    images: ["https://andrii-mitko-brand.vercel.app/og-image.png"],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://andrii-mitko.vercel.app",
+    canonical: "https://andrii-mitko-brand.vercel.app/p",
   },
   icons: {
     icon: "/icon.svg",

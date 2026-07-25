@@ -14,11 +14,12 @@ export default function Hero() {
 
             <h1 className={styles.title}>Andrii Mitko</h1>
 
-            <h2 className={styles.subtitle}>Full Stack Developer</h2>
+            <h2 className={styles.subtitle}>Full Stack JavaScript Developer</h2>
 
             <p className={styles.description}>
-              I build fast, accessible and scalable web applications using
-              React, Next.js, TypeScript and Node.js.
+              I build modern, responsive and scalable web applications using
+              React, Next.js, TypeScript and Node.js, focusing on clean code and
+              great user experience.
             </p>
 
             <div className={styles.actions}>
@@ -28,7 +29,7 @@ export default function Hero() {
                 Contact Me
               </Button>
             </div>
-             <TechStack />
+            <TechStack />
           </div>
           <HeroImage />
         </div>

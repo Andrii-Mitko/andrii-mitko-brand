@@ -32,12 +32,12 @@ export default function ProjectCard({ project }: Props) {
 
         <ul className={styles.tags}>
           {project.technologies.map((tech) => (
-            <span
+            <li
               key={tech}
               className={`${styles.tag} ${styles[tech.replace(/\W/g, "")]}`}
             >
               {tech}
-            </span>
+            </li>
           ))}
         </ul>
 

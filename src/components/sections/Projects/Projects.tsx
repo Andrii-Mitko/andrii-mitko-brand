@@ -11,8 +11,6 @@ export default function Projects() {
     <section className={styles.section} id="projects">
       <Container>
         <header className={styles.header}>
-          <p className={styles.eyebrow}>My Work</p>
-
           <SectionTitle
             eyebrow="Portfolio"
             title="Featured Projects"
