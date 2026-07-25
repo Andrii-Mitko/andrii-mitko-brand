@@ -26,9 +26,9 @@ export default function TechStack() {
     <section className={styles.section} id="tech-stack">
       <Container>
         <header className={styles.header}>
-          <p className={styles.eyebrow}>Technologies</p>
+          <p className={styles.eyebrow}>Technologies & Tools</p>
 
-          <h2 className={styles.title}>Tech Stack</h2>
+          <h2 className={styles.title}>My Tech Stack</h2>
 
           <p className={styles.description}>
             Technologies and tools I use to build modern web applications.

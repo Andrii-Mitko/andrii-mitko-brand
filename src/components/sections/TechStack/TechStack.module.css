@@ -1,5 +1,5 @@
 .section {
-  margin-top: 64px;
+  padding-block: 96px;
 }
 .header {
   margin-bottom: 56px;
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-
+  min-height: 72px;
   padding: 16px 20px;
 
   border: 1px solid var(--color-surface-light);
@@ -81,11 +81,9 @@
 }
 
 .card:hover .icon {
-  transform: scale(1.15) rotate(-8deg);
-}
-.card:hover .icon {
   transform: scale(1.15) rotate(5deg);
 }
+
 .category {
   margin-bottom: 48px;
 }
@@ -106,12 +104,12 @@
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1280px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }

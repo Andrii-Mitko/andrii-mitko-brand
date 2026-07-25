@@ -6,5 +6,5 @@ export type Project = {
   technologies: string[];
   github?: string;
   live?: string;
-  featured?: boolean;
+  Featured?: boolean;
 };

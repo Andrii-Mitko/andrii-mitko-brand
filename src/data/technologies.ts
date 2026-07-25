@@ -7,6 +7,8 @@ import {
   FaGitAlt,
   FaDocker,
   FaGithub,
+  FaDatabase,
+  FaBox,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -15,34 +17,12 @@ import {
   SiExpress,
   SiMongodb,
   SiFigma,
+  SiReactquery,
+  SiCloudinary,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 export const technologies: Technology[] = [
-  {
-    id: "html5",
-    name: "HTML5",
-    icon: FaHtml5,
-    category: "frontend",
-  },
-  {
-    id: "css3",
-    name: "CSS3",
-    icon: FaCss3Alt,
-    category: "frontend",
-  },
-  {
-    id: "javascript",
-    name: "JavaScript",
-    icon: SiJavascript,
-    category: "frontend",
-  },
-  {
-    id: "typescript",
-    name: "TypeScript",
-    icon: SiTypescript,
-    category: "frontend",
-  },
   {
     id: "react",
     name: "React",
@@ -56,6 +36,43 @@ export const technologies: Technology[] = [
     category: "frontend",
   },
   {
+    id: "typescript",
+    name: "TypeScript",
+    icon: SiTypescript,
+    category: "frontend",
+  },
+  {
+    id: "zustand",
+    name: "Zustand",
+    icon: FaBox,
+    category: "frontend",
+  },
+  {
+    id: "react-query",
+    name: "React Query",
+    icon: SiReactquery,
+    category: "frontend",
+  },
+  {
+    id: "javascript",
+    name: "JavaScript",
+    icon: SiJavascript,
+    category: "frontend",
+  },
+  {
+    id: "html5",
+    name: "HTML5",
+    icon: FaHtml5,
+    category: "frontend",
+  },
+  {
+    id: "css3",
+    name: "CSS3",
+    icon: FaCss3Alt,
+    category: "frontend",
+  },
+
+  {
     id: "nodejs",
     name: "Node.js",
     icon: FaNodeJs,
@@ -68,11 +85,24 @@ export const technologies: Technology[] = [
     category: "backend",
   },
   {
+    id: "mongoose",
+    name: "Mongoose",
+    icon: FaDatabase,
+    category: "backend",
+  },
+  {
+    id: "cloudinary",
+    name: "Cloudinary",
+    icon: SiCloudinary,
+    category: "backend",
+  },
+  {
     id: "mongodb",
     name: "MongoDB",
     icon: SiMongodb,
     category: "database",
   },
+
   {
     id: "git",
     name: "Git",

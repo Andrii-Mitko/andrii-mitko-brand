@@ -22,7 +22,9 @@ export default function ProjectCard({ project }: Props) {
           sizes="(max-width: 768px) 100vw, 33vw"
           className={styles.image}
         />
-        {project.featured && <span className={styles.featured}>Featured</span>}
+        {project.Featured && (
+          <span className={styles.featured}>Featured Project</span>
+        )}
       </div>
 
       <div className={styles.content}>

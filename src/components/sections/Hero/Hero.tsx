@@ -10,25 +10,24 @@ export default function Hero() {
       <Container>
         <div className={styles.wrapper}>
           <div className={styles.content}>
-            <span className={styles.eyebrow}>👋 Hi, I`m</span>
+            <span className={styles.eyebrow}>👋 Hi, I`m Andrii</span>
 
-            <h1 className={styles.title}>Andrii Mitko</h1>
-
-            <h2 className={styles.subtitle}>Full Stack JavaScript Developer</h2>
+            <h1 className={styles.title}>Full Stack JavaScript Developer</h1>
 
             <p className={styles.description}>
-              I build modern, responsive and scalable web applications using
-              React, Next.js, TypeScript and Node.js, focusing on clean code and
-              great user experience.
+              I build modern, scalable web applications with React, Next.js,
+              TypeScript and Node.js. Focused on clean architecture, performance
+              and great user experience.
             </p>
 
             <div className={styles.actions}>
               <Button href="#projects">View Projects</Button>
 
-              <Button href="#contact" variant="secondary">
-                Contact Me
+              <Button href="/resume/Andrii-Mitko-CV.pdf" variant="secondary">
+                Download CV
               </Button>
             </div>
+
             <TechStack />
           </div>
           <HeroImage />
