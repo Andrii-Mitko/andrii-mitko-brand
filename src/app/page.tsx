@@ -10,7 +10,7 @@ import TechStack from "@/components/sections/TechStack/TechStack";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Header />
       <Hero />
       <TechStack />
@@ -20,6 +20,6 @@ export default function Home() {
       <Education />
       <Contact />
       <Footer />
-    </>
+    </main>
   );
 }

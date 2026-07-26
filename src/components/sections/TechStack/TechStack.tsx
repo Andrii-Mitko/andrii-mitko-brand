@@ -47,7 +47,7 @@ export default function TechStack() {
 
                   return (
                     <article key={technology.id} className={styles.card}>
-                      <Icon className={styles.icon} />
+                      <Icon className={styles.icon} aria-hidden="true" />
 
                       <span className={styles.name}>{technology.name}</span>
                     </article>

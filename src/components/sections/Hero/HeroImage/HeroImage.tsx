@@ -20,7 +20,7 @@ export default function HeroImage() {
 
         <Image
           className={styles.img}
-          src="/logos/me.jpg"
+          src="/logos/me.webp"
           alt="Andrii Mitko - Full Stack JavaScript Developer"
           width={380}
           height={380}
