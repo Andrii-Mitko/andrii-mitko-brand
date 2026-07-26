@@ -25,6 +25,10 @@ export default function HeroImage() {
           width={380}
           height={380}
           priority
+          fetchPriority="high"
+          sizes="(max-width:768px) 280px,
+         (max-width:1279px) 320px,
+         380px"
         />
 
         <div className={styles.badge}>

@@ -31,27 +31,22 @@
 
 .glow {
   position: absolute;
-
   inset: -40px;
-
   z-index: -1;
-
   border-radius: 50%;
-
   background: radial-gradient(
     circle,
     rgba(59, 130, 246, 0.35),
     transparent 70%
   );
-
-  filter: blur(50px);
+  filter: blur(32px);
 }
 
 /* photo */
 
 .img {
-  width: calc(100% - 16px);
-  height: calc(100% - 16px);
+  width: 96%;
+  height: 96%;
   object-fit: cover;
   object-position: center 5%;
   border-radius: 50%;
@@ -64,44 +59,27 @@
 
 .badge {
   position: absolute;
-
   bottom: -20px;
-
   left: 50%;
-
   transform: translateX(-50%);
-
   display: flex;
-
   align-items: center;
-
   gap: 8px;
-
   padding: 10px 18px;
-
   white-space: nowrap;
-
   border-radius: 999px;
-
-  background: var(--color-surface);
-
+  background-color: var(--color-surface);
   color: var(--color-text);
-
   font-size: 0.875rem;
-
   font-weight: 600;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .badge span {
   width: 8px;
-
   height: 8px;
-
   border-radius: 50%;
-
-  background: #22c55e;
+  background-color: #22c55e;
 }
 
 /* tablet */
