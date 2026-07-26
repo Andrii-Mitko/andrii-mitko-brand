@@ -96,9 +96,14 @@ export default function MobileMenu({ onClose }: Props) {
           </li>
 
           <li>
-            <Link href="/resume/Andrii-Mitko-CV.pdf" onClick={onClose}>
+            <a
+              href="/resume/Andrii-Mitko-CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={onClose}
+            >
               Resume
-            </Link>
+            </a>
           </li>
         </ul>
       </motion.nav>

@@ -62,7 +62,7 @@ export default function Header() {
                 GitHub
               </Link>
 
-              <Link
+              <a
                 className={styles.resume}
                 href="/resume/Andrii-Mitko-CV.pdf"
                 target="_blank"
@@ -70,7 +70,7 @@ export default function Header() {
                 aria-label="Download my resume"
               >
                 Download Resume
-              </Link>
+              </a>
             </div>
             <button
               ref={menuButtonRef}
