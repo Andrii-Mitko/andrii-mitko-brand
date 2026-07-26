@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://andrii-mitko-brand.vercel.app/og-image.png",
+        url: "https://andrii-mitko-brand.vercel.app/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Andrii Mitko Portfolio",
@@ -78,17 +78,14 @@ export const metadata: Metadata = {
     description:
       "Full Stack JavaScript Developer specializing in React, Next.js, TypeScript, Node.js and MongoDB.",
 
-    images: ["https://andrii-mitko-brand.vercel.app/og-image.png"],
+    images: ["https://andrii-mitko-brand.vercel.app/og-image.webp"],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://andrii-mitko-brand.vercel.app/p",
-  },
-  icons: {
-    icon: "/icon.svg",
+    canonical: "https://andrii-mitko-brand.vercel.app/",
   },
 };
 
