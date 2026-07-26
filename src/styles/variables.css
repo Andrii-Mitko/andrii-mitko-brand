@@ -1,5 +1,6 @@
 :root {
   --header-height: 72px;
+  --color-border: rgba(255, 255, 255, 0.08);
 
   /* Background */
   --color-bg: #0b1120;
@@ -12,8 +13,8 @@
   --color-text-muted: #94a3b8;
 
   /* Brand */
-  --color-primary: #3b82f6;
-  --color-primary-hover: #2563eb;
+  --color-primary: #60a5fa;
+  --color-primary-hover: #93c5fd;
 
   /* Status */
   --color-success: #10b981;
