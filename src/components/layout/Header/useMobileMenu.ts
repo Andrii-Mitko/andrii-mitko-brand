@@ -28,7 +28,6 @@ export function useMobileMenu() {
 
     return () => {
       document.removeEventListener("keydown", handleEscape);
-
       document.body.style.overflow = previousOverflow;
     };
   }, [isOpen]);

@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaTelegramPlane,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 
 import Container from "@/components/layout/Container/Container";
 import Card from "@/components/ui/Card/Card";
@@ -14,8 +19,8 @@ export default function Contact() {
       <Container>
         <SectionTitle
           eyebrow="Contact"
-          title="Let's work together"
-          description="I'm currently open to Full Stack, Frontend and Backend opportunities."
+          title="Let's Build Something Great"
+          description="I'm open to Full Stack JavaScript Developer opportunities and freelance projects. Let's discuss how I can contribute to your team."
         />
 
         <Card>
@@ -24,8 +29,8 @@ export default function Contact() {
               <h3>Get in touch</h3>
 
               <p>
-                If you have a project, job opportunity or just want to say
-                hello, feel free to contact me.
+                Whether you`re looking for a developer, have a project in mind
+                or want to collaborate, I`d be happy to hear from you.
               </p>
             </div>
 
@@ -34,32 +39,44 @@ export default function Contact() {
                 href="mailto:andreymit123@gmail.com"
                 className={styles.link}
               >
-                <FaEnvelope />
+                <FaEnvelope aria-hidden="true" />
                 <span>andreymit123@gmail.com</span>
+              </Link>
+
+              <Link
+                href="https://t.me/Andrii_And"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                <FaTelegramPlane aria-hidden="true" />
+                <span>@Andrii_And</span>
               </Link>
 
               <Link
                 href="https://github.com/Andrii-Mitko"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.link}
               >
-                <FaGithub />
+                <FaGithub aria-hidden="true" />
                 <span>GitHub</span>
               </Link>
 
               <Link
                 href="https://www.linkedin.com/in/andrii-mitko/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.link}
               >
-                <FaLinkedin />
+                <FaLinkedin aria-hidden="true" />
                 <span>LinkedIn</span>
               </Link>
             </div>
 
             <div className={styles.actions}>
               <Button href="mailto:andreymit123@gmail.com" variant="primary">
-                Let`s Talk
+                Send Email
               </Button>
             </div>
           </div>

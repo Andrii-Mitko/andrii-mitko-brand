@@ -1,15 +1,15 @@
 .overlay {
   position: fixed;
 
-  top: 72px;
+  top: var(--header-height);
   left: 0;
   right: 0;
   bottom: 0;
 
+  z-index: 2000;
+
   display: flex;
   justify-content: flex-end;
-
-  z-index: 2000;
 
   background-color: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(4px);
@@ -17,15 +17,18 @@
 
 .menu {
   width: min(320px, 85vw);
-  height: calc(100vh - 72px);
+
+  height: calc(100vh - var(--header-height));
+
   box-sizing: border-box;
+
   padding: 32px 20px;
 
   background-color: var(--color-bg);
 
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.35);
 
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .list {

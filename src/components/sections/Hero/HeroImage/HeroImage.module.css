@@ -34,7 +34,7 @@
 
   inset: -40px;
 
-  z-index: -1;
+  /* z-index: -1; */
 
   border-radius: 50%;
 
@@ -44,24 +44,20 @@
     transparent 70%
   );
 
-  filter: blur(25px);
+  filter: blur(50px);
 }
 
 /* photo */
 
 .img {
-  width: 100%;
-  height: 100%;
-
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
   object-fit: cover;
-
-  object-position: center 10%;
-
+  object-position: center 5%;
   border-radius: 50%;
-
   display: block;
-
   border: 6px solid var(--color-bg);
+  transition: transform 400ms ease;
 }
 
 /* availability badge */
@@ -117,9 +113,7 @@
 
   .card {
     width: 320px;
-
     height: 320px;
-    transform: translateY(-500px);
   }
 }
 
@@ -132,7 +126,6 @@
 
   .card {
     width: 380px;
-
     height: 380px;
   }
 }

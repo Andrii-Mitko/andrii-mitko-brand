@@ -20,6 +20,10 @@ export default function MobileMenu({ onClose }: Props) {
       "a, button, input, textarea, select",
     );
 
+    if (focusableElements.length === 0) {
+      return;
+    }
+
     const firstElement = focusableElements[0];
     const lastElement = focusableElements[focusableElements.length - 1];
 
@@ -50,6 +54,7 @@ export default function MobileMenu({ onClose }: Props) {
   return (
     <motion.div
       className={styles.overlay}
+      role="presentation"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

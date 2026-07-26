@@ -1,11 +1,21 @@
+"use client";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 import styles from "./HeroImage.module.css";
 
 export default function HeroImage() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.card}>
+      <motion.div
+        className={styles.card}
+        initial={{ opacity: 0, scale: 0.85, x: 40 }}
+        animate={{ opacity: 1, scale: 1, x: 0 }}
+        transition={{
+          duration: 0.7,
+          delay: 0.2,
+          ease: "easeOut",
+        }}
+      >
         <div className={styles.glow} />
 
         <Image
@@ -21,7 +31,7 @@ export default function HeroImage() {
           <span />
           Available for work
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

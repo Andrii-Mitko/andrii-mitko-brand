@@ -1,15 +1,18 @@
-import type { ReactNode } from "react";
-
+import type { HTMLAttributes, ReactNode } from "react";
 import styles from "./Container.module.css";
 
-type ContainerProps = {
+type ContainerProps = HTMLAttributes<HTMLDivElement> & {
   children: ReactNode;
-  className?: string;
 };
 
 export default function Container({
   children,
   className = "",
+  ...props
 }: ContainerProps) {
-  return <div className={`${styles.container} ${className}`}>{children}</div>;
+  return (
+    <div className={`${styles.container} ${className}`} {...props}>
+      {children}
+    </div>
+  );
 }

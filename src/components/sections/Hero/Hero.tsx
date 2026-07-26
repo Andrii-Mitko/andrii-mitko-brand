@@ -1,15 +1,24 @@
+"use client";
 import Container from "../../layout/Container/Container";
 import styles from "./Hero.module.css";
 import Button from "../../ui/Button/Button";
 import HeroImage from "./HeroImage/HeroImage";
-import TechStack from "../TechStack/TechStack";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
       <Container>
-        <div className={styles.wrapper}>
-          <div className={styles.content}>
+        <motion.div className={styles.wrapper}>
+          <motion.div
+            className={styles.content}
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+            }}
+          >
             <span className={styles.eyebrow}>👋 Hi, I`m Andrii</span>
 
             <h1 className={styles.title}>Full Stack JavaScript Developer</h1>
@@ -27,11 +36,9 @@ export default function Hero() {
                 Download CV
               </Button>
             </div>
-
-            <TechStack />
-          </div>
+          </motion.div>
           <HeroImage />
-        </div>
+        </motion.div>
       </Container>
     </section>
   );

@@ -1,9 +1,8 @@
 import Link from "next/link";
 import styles from "./Button.module.css";
+import type { ComponentPropsWithoutRef } from "react";
 
-type ButtonProps = {
-  href: string;
-  children: React.ReactNode;
+type ButtonProps = ComponentPropsWithoutRef<typeof Link> & {
   variant?: "primary" | "secondary";
 };
 

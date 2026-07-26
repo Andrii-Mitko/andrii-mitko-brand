@@ -1,4 +1,6 @@
 :root {
+  --header-height: 72px;
+
   /* Background */
   --color-bg: #0b1120;
   --color-surface: #111827;

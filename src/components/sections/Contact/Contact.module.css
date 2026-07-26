@@ -90,8 +90,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    gap: 64px;
+    gap: 80px;
   }
 
   .info {

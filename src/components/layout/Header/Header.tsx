@@ -28,72 +28,75 @@ export default function Header() {
     };
   }, []);
   return (
-    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
-      <Container>
-        <div className={styles.inner}>
-          <Link href="/" className={styles.logo} aria-label="Go to homepage">
-            <Image
-              src="/logos/logo-full.png"
-              alt="Andrii Mitko Logo"
-              width={180}
-              height={48}
-              priority
-            />
-          </Link>
-
-          <nav className={styles.navigation} aria-label="Primary navigation">
-            <ul className={styles.nav}>
-              {navigation.map((item) => (
-                <li key={item.label}>
-                  <Link href={item.href}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className={styles.actions}>
-            <Link
-              href="https://github.com/Andrii-Mitko"
-              target="_blank"
-              className={styles.github}
-              rel="noopener noreferrer"
-              aria-label="Visit my GitHub profile"
-            >
-              GitHub
+    <>
+      <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
+        <Container>
+          <div className={styles.inner}>
+            <Link href="/" className={styles.logo} aria-label="Go to homepage">
+              <Image
+                src="/logos/logo-full.png"
+                alt="Andrii Mitko Logo"
+                width={180}
+                height={48}
+                priority
+              />
             </Link>
 
-            <Link
-              className={styles.resume}
-              href="/resume/Andrii-Mitko-CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download my resume"
+            <nav className={styles.navigation} aria-label="Primary navigation">
+              <ul className={styles.nav}>
+                {navigation.map((item) => (
+                  <li key={item.label}>
+                    <Link href={item.href}>{item.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className={styles.actions}>
+              <Link
+                href="https://github.com/Andrii-Mitko"
+                target="_blank"
+                className={styles.github}
+                rel="noopener noreferrer"
+                aria-label="Visit my GitHub profile"
+              >
+                GitHub
+              </Link>
+
+              <Link
+                className={styles.resume}
+                href="/resume/Andrii-Mitko-CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download my resume"
+              >
+                Download Resume
+              </Link>
+            </div>
+            <button
+              ref={menuButtonRef}
+              type="button"
+              className={styles.menuButton}
+              onClick={toggle}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
             >
-              Download Resume
-            </Link>
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
           </div>
-          <button
-            ref={menuButtonRef}
-            type="button"
-            className={styles.menuButton}
-            onClick={toggle}
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-            aria-expanded={isOpen}
-            aria-controls="mobile-menu"
-          >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
-      </Container>
-      <AnimatePresence>
-        {isOpen && (
-          <MobileMenu
-            onClose={() => {
-              close();
-              menuButtonRef.current?.focus();
-            }}
-          />
-        )}
-      </AnimatePresence>
-    </header>
+        </Container>
+
+        <AnimatePresence>
+          {isOpen && (
+            <MobileMenu
+              onClose={() => {
+                close();
+                menuButtonRef.current?.focus();
+              }}
+            />
+          )}
+        </AnimatePresence>
+      </header>
+    </>
   );
 }

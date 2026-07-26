@@ -1,8 +1,8 @@
 .header {
-  position: sticky;
-
+  position: fixed;
+  width: 100%;
   top: 0;
-
+  left: 0;
   z-index: 1000;
 
   height: 72px;
@@ -129,12 +129,9 @@
     display: block;
   }
 
-  .nav {
-    gap: 20px;
-  }
-
   .actions {
     display: flex;
+    align-items: center;
     gap: 12px;
   }
 
@@ -142,6 +139,7 @@
     display: none;
   }
 }
+
 @media (min-width: 1280px) {
   .nav {
     gap: 32px;
