@@ -34,10 +34,10 @@ export default function Header() {
           <div className={styles.inner}>
             <Link href="/" className={styles.logo} aria-label="Go to homepage">
               <Image
-                src="/logos/logo-full.png"
+                src="/logos/logo-full.webp"
                 alt="Andrii Mitko Logo"
                 width={180}
-                height={48}
+                height={54}
                 priority
               />
             </Link>
