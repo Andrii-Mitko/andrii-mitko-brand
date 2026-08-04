@@ -21,6 +21,24 @@ export const projects: Project[] = [
     Featured: true,
   },
   {
+    id: "html-css-tutorial",
+    title: "HTML & CSS Tutorial",
+    description:
+      "Interactive HTML & CSS learning platform built with Next.js. Includes theory, practical exercises, hints and solutions, providing a structured way to learn modern web development.",
+    image: "/projects/html-css-tutoria.webp",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "CSS Modules",
+      "SEO",
+      "Responsive Design",
+    ],
+    live: "https://textbook-html-css.vercel.app",
+    github: "https://github.com/Andrii-Mitko/textbook-html-css",
+    Featured: true,
+  },
+  {
     id: "portfolio",
     title: "Developer Portfolio",
     description:
