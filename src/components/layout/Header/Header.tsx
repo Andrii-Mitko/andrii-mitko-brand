@@ -10,6 +10,7 @@ import { useMobileMenu } from "./useMobileMenu";
 import { navigation } from "@/data/navigation";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import ResumeDropdown from "@/components/ui/ResumeDropdown/ResumeDropdown";
 
 export default function Header() {
   const { isOpen, toggle, close } = useMobileMenu();
@@ -62,15 +63,7 @@ export default function Header() {
                 GitHub
               </Link>
 
-              <a
-                className={styles.resume}
-                href="/resume/Andrii-Mitko-CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Download my resume"
-              >
-                Download Resume
-              </a>
+              <ResumeDropdown />
             </div>
             <button
               ref={menuButtonRef}

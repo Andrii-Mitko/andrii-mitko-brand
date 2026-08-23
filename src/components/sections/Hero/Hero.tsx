@@ -4,6 +4,7 @@ import styles from "./Hero.module.css";
 import Button from "../../ui/Button/Button";
 import HeroImage from "./HeroImage/HeroImage";
 import { motion } from "framer-motion";
+import ResumeDropdown from "@/components/ui/ResumeDropdown/ResumeDropdown";
 
 export default function Hero() {
   return (
@@ -30,11 +31,11 @@ export default function Hero() {
             </p>
 
             <div className={styles.actions}>
-              <Button href="#projects">View Projects</Button>
-
-              <Button href="/resume/Andrii-Mitko-CV.pdf" variant="secondary">
-                Download CV
+              <Button href="#projects" variant="secondary">
+                View Projects
               </Button>
+
+              <ResumeDropdown />
             </div>
           </motion.div>
           <HeroImage />

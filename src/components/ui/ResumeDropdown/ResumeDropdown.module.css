@@ -1,0 +1,76 @@
+.root {
+  position: relative;
+}
+
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 20px;
+  min-height: 52px;
+
+  border: none;
+  border-radius: 999px;
+
+  background-color: var(--color-primary);
+  color: white;
+
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition),
+    transform var(--transition);
+}
+
+.trigger:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+}
+
+.chevron {
+  transition: transform var(--transition);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+
+  min-width: 200px;
+  padding: 8px;
+
+  list-style: none;
+
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+
+  z-index: 1100;
+}
+
+.menuItem {
+  display: block;
+  min-height: 52px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+
+  transition: background-color var(--transition);
+}
+
+.menuItem:hover {
+  background-color: var(--color-surface-light);
+  color: var(--color-primary);
+}
