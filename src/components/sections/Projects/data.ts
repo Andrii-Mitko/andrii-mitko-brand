@@ -18,6 +18,28 @@ export const projects: Project[] = [
       "Telegram Bot",
     ],
     live: "https://wona-bride.com.ua",
+    github: "https://github.com/wona-bride/wona-bride",
+    Featured: true,
+  },
+  {
+    id: "webcrafters-03",
+    title: "Harmoniq — Webcrafters-03",
+    description:
+      "Team full-stack pet project built as a monorepo with Next.js, TypeScript, Express.js and MongoDB. Feature owner for Login, Auth State & Route Guards, including authentication flow, protected routes, API integration and backend error handling.",
+    image: "/projects/webcrafters-03.webp",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Zustand",
+      "Formik",
+      "Yup",
+      "Express",
+      "MongoDB",
+      "JWT",
+    ],
+    live: "https://project-webcrafters-03-frontend.vercel.app/",
+    github: "https://github.com/vitaliypolets/project-webcrafters-03",
     Featured: true,
   },
   {
@@ -36,7 +58,6 @@ export const projects: Project[] = [
     ],
     live: "https://textbook-html-css.vercel.app",
     github: "https://github.com/Andrii-Mitko/textbook-html-css",
-    Featured: true,
   },
   {
     id: "portfolio",

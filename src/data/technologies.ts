@@ -19,10 +19,15 @@ import {
   SiFigma,
   SiReactquery,
   SiCloudinary,
+  SiAxios,
+  SiFormik,
+  SiZod,
+  SiJsonwebtokens,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 export const technologies: Technology[] = [
+  // Frontend
   {
     id: "react",
     name: "React",
@@ -42,6 +47,12 @@ export const technologies: Technology[] = [
     category: "frontend",
   },
   {
+    id: "javascript",
+    name: "JavaScript",
+    icon: SiJavascript,
+    category: "frontend",
+  },
+  {
     id: "zustand",
     name: "Zustand",
     icon: FaBox,
@@ -54,11 +65,18 @@ export const technologies: Technology[] = [
     category: "frontend",
   },
   {
-    id: "javascript",
-    name: "JavaScript",
-    icon: SiJavascript,
+    id: "axios",
+    name: "Axios",
+    icon: SiAxios,
     category: "frontend",
   },
+  {
+    id: "formik",
+    name: "Formik",
+    icon: SiFormik,
+    category: "frontend",
+  },
+
   {
     id: "html5",
     name: "HTML5",
@@ -72,6 +90,7 @@ export const technologies: Technology[] = [
     category: "frontend",
   },
 
+  // Backend
   {
     id: "nodejs",
     name: "Node.js",
@@ -91,11 +110,25 @@ export const technologies: Technology[] = [
     category: "backend",
   },
   {
+    id: "zod",
+    name: "Zod",
+    icon: SiZod,
+    category: "backend",
+  },
+  {
+    id: "jwt",
+    name: "JWT",
+    icon: SiJsonwebtokens,
+    category: "backend",
+  },
+  {
     id: "cloudinary",
     name: "Cloudinary",
     icon: SiCloudinary,
     category: "backend",
   },
+
+  // Database
   {
     id: "mongodb",
     name: "MongoDB",
@@ -103,6 +136,7 @@ export const technologies: Technology[] = [
     category: "database",
   },
 
+  // Tools
   {
     id: "git",
     name: "Git",
