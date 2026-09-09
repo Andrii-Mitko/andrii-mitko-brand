@@ -25,6 +25,17 @@ export default function Education() {
               <h4 className={styles.degree}>{item.degree}</h4>
 
               <p className={styles.description}>{item.description}</p>
+
+              {item.certificate && (
+                <a
+                  href={item.certificate}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.certificate}
+                >
+                  View Certificate
+                </a>
+              )}
             </Card>
           ))}
         </div>

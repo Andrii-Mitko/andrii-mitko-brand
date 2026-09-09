@@ -5,6 +5,7 @@ export const education = [
     degree: "Full Stack Developer",
     description:
       "Completed a comprehensive Full Stack Development program covering React, Next.js, TypeScript, Node.js, Express, MongoDB and modern web development practices.",
+    certificate: "/Certificate.pdf",
   },
   {
     period: "1991 – 1995",

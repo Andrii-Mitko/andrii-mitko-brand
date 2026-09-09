@@ -35,3 +35,20 @@
 
   line-height: 1.7;
 }
+
+.certificate {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  color: var(--color-primary);
+
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.certificate:hover {
+  opacity: 0.8;
+}
