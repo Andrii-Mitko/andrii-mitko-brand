@@ -21,6 +21,29 @@ export const projects: Project[] = [
     github: "https://github.com/wona-bride/wona-bride",
     Featured: true,
   },
+
+  {
+    id: "barska-oil",
+    title: "Барська Олія",
+    description:
+      "Commercial full-stack e-commerce website developed for a real sunflower oil manufacturer. Features product catalog, shopping cart, wholesale pricing, order processing, Telegram notifications, MongoDB database and custom admin panel.",
+    image: "/projects/barska-oil.webp",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "MongoDB",
+      "Mongoose",
+      "Zod",
+      "React Hook Form",
+      "Cloudinary",
+      "Telegram Bot",
+    ],
+    live: "https://barskaoil.com.ua/",
+    github: "https://github.com/Andrii-Mitko/barska.oil",
+    Featured: true,
+  },
+
   {
     id: "webcrafters-03",
     title: "Harmoniq — Webcrafters-03",
