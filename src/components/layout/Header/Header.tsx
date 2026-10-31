@@ -1,16 +1,16 @@
 "use client";
 
-import Link from "next/link";
-import styles from "./Header.module.css";
-import Image from "next/image";
-import { Menu, X } from "lucide-react";
-import Container from "../Container/Container";
-import MobileMenu from "../MobileMenu/MobileMenu";
-import { useMobileMenu } from "./useMobileMenu";
-import { navigation } from "@/data/navigation";
-import { AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import Container from "@/components/layout/Container/Container";
+import MobileMenu from "@/components/layout/MobileMenu/MobileMenu";
 import ResumeDropdown from "@/components/ui/ResumeDropdown/ResumeDropdown";
+import { navigation } from "@/data/navigation";
+import { useMobileMenu } from "./useMobileMenu";
+import styles from "./Header.module.css";
 
 export default function Header() {
   const { isOpen, toggle, close } = useMobileMenu();
@@ -18,16 +18,13 @@ export default function Header() {
   const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <>
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
@@ -52,19 +49,21 @@ export default function Header() {
                 ))}
               </ul>
             </nav>
+
             <div className={styles.actions}>
-              <Link
+              <a
                 href="https://github.com/Andrii-Mitko"
                 target="_blank"
-                className={styles.github}
                 rel="noopener noreferrer"
+                className={styles.github}
                 aria-label="Visit my GitHub profile"
               >
                 GitHub
-              </Link>
+              </a>
 
               <ResumeDropdown />
             </div>
+
             <button
               ref={menuButtonRef}
               type="button"
@@ -74,22 +73,26 @@ export default function Header() {
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
             >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
+              {isOpen ? (
+                <X size={28} aria-hidden="true" />
+              ) : (
+                <Menu size={28} aria-hidden="true" />
+              )}
             </button>
           </div>
         </Container>
-
-        <AnimatePresence>
-          {isOpen && (
-            <MobileMenu
-              onClose={() => {
-                close();
-                menuButtonRef.current?.focus();
-              }}
-            />
-          )}
-        </AnimatePresence>
       </header>
+
+      <AnimatePresence>
+        {isOpen && (
+          <MobileMenu
+            onClose={() => {
+              close();
+              menuButtonRef.current?.focus();
+            }}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 }

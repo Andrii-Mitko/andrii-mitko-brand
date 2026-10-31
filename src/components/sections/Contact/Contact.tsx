@@ -29,8 +29,8 @@ export default function Contact() {
               <h3>Get in touch</h3>
 
               <p>
-                Whether you`re looking for a developer, have a project in mind
-                or want to collaborate, I`d be happy to hear from you.
+                Whether you&apos;re looking for a developer, have a project in
+                mind or want to collaborate, I&apos;d be happy to hear from you.
               </p>
             </div>
 

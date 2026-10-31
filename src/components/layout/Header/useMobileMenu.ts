@@ -1,41 +1,40 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+
+const DESKTOP_QUERY = "(min-width: 768px)";
 
 export function useMobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const open = () => setIsOpen(true);
-
-  const close = () => setIsOpen(false);
-
-  const toggle = () => {
-    setIsOpen((prev) => !prev);
-  };
+  const open = useCallback(() => setIsOpen(true), []);
+  const close = useCallback(() => setIsOpen(false), []);
+  const toggle = useCallback(() => setIsOpen((prev) => !prev), []);
 
   useEffect(() => {
     if (!isOpen) return;
 
-    const previousOverflow = document.body.style.overflow;
+    // Блокуємо html, а не body: через overflow-x на html body не передає overflow у viewport
+    const root = document.documentElement;
+    const previousOverflow = root.style.overflow;
+    const mediaQuery = window.matchMedia(DESKTOP_QUERY);
 
     const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        close();
-      }
+      if (event.key === "Escape") close();
+    };
+
+    const handleBreakpointChange = (event: MediaQueryListEvent) => {
+      if (event.matches) close();
     };
 
     document.addEventListener("keydown", handleEscape);
-
-    document.body.style.overflow = "hidden";
+    mediaQuery.addEventListener("change", handleBreakpointChange);
+    root.style.overflow = "hidden";
 
     return () => {
       document.removeEventListener("keydown", handleEscape);
-      document.body.style.overflow = previousOverflow;
+      mediaQuery.removeEventListener("change", handleBreakpointChange);
+      root.style.overflow = previousOverflow;
     };
-  }, [isOpen]);
+  }, [isOpen, close]);
 
-  return {
-    isOpen,
-    open,
-    close,
-    toggle,
-  };
+  return { isOpen, open, close, toggle };
 }

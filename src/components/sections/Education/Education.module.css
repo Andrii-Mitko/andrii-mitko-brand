@@ -1,10 +1,11 @@
 .section {
-  padding-block: 80px;
+  padding-top: var(--space-section);
+  padding-bottom: var(--space-section);
 }
 
 .grid {
   display: grid;
-  gap: 32px;
+  gap: var(--space-lg);
 }
 
 .period {
@@ -16,12 +17,15 @@
 
   font-weight: 700;
 }
+
 .cardTitle {
-  margin: 0 0 8px;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .degree {
-  margin: 0 0 16px;
+  margin-top: 0;
+  margin-bottom: 16px;
 
   color: var(--color-text-secondary);
 
@@ -29,7 +33,8 @@
 }
 
 .description {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
   color: var(--color-text-secondary);
 
@@ -46,9 +51,29 @@
   font-weight: 600;
   text-decoration: none;
 
-  transition: opacity 0.2s ease;
+  transition: opacity var(--transition);
 }
 
 .certificate:hover {
   opacity: 0.8;
+}
+
+.certificate:focus-visible {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--color-primary);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
 }

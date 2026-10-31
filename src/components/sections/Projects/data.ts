@@ -70,7 +70,7 @@ export const projects: Project[] = [
     title: "HTML & CSS Tutorial",
     description:
       "Interactive HTML & CSS learning platform built with Next.js. Includes theory, practical exercises, hints and solutions, providing a structured way to learn modern web development.",
-    image: "/projects/html-css-tutoria.webp",
+    image: "/projects/html-css-tutorial.webp",
     technologies: [
       "Next.js",
       "React",

@@ -22,7 +22,7 @@ export default function Education() {
 
               <h3 className={styles.cardTitle}>{item.school}</h3>
 
-              <h4 className={styles.degree}>{item.degree}</h4>
+              <p className={styles.degree}>{item.degree}</p>
 
               <p className={styles.description}>{item.description}</p>
 
@@ -32,6 +32,7 @@ export default function Education() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.certificate}
+                  aria-label={`View ${item.school} certificate (PDF)`}
                 >
                   View Certificate
                 </a>

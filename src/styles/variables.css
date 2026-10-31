@@ -6,6 +6,8 @@
   --color-bg: #0b1120;
   --color-surface: #111827;
   --color-surface-light: #1f2937;
+  --color-header-bg: rgba(11, 17, 32, 0.85);
+  --color-header-bg-scrolled: rgba(11, 17, 32, 0.95);
 
   /* Text */
   --color-text: #f9fafb;
@@ -15,6 +17,8 @@
   /* Brand */
   --color-primary: #60a5fa;
   --color-primary-hover: #93c5fd;
+  /* Текст на primary-фоні: білий дає контраст ~2.5:1, темний ~7.4:1 */
+  --color-on-primary: #0b1120;
 
   /* Status */
   --color-success: #10b981;
@@ -46,5 +50,12 @@
   --space-lg: 24px;
   --space-xl: 32px;
   --space-2xl: 48px;
-  --space-section: 80px;
+  /* Mobile-First: менший відступ секцій на мобільних */
+  --space-section: 48px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --space-section: 80px;
+  }
 }

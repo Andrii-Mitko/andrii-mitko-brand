@@ -20,7 +20,7 @@ export default function Hero() {
               ease: "easeOut",
             }}
           >
-            <span className={styles.eyebrow}>👋 Hi, I`m Andrii</span>
+            <span className={styles.eyebrow}>👋 Hi, I&apos;m Andrii</span>
 
             <h1 className={styles.title}>Full Stack JavaScript Developer</h1>
 
